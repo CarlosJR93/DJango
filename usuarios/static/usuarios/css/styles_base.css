@@ -1,0 +1,121 @@
+.content {
+    margin-top: 80px; /* Ajuste para navbar fija */
+}
+
+.custom-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: gradientBackground 10s infinite alternate;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a18cd1, #fbc2eb);
+    background-size: 400% 400%;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.custom-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.custom-form:hover {
+    transform: scale(1.02);
+}
+
+.form-control {
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: #5cb85c;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+}
+
+.submit-btn {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #4cae4c;
+}
+.formulario-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #007bff;
+}
+
+form {
+    border-radius: 15px;
+    border: 1px solid #ced4da;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Estilo para los botones de acción */
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* Estilos para la tabla */
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table th {
+    font-weight: bold;
+}
+
+.table td a {
+    margin-right: 10px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.page-item.disabled .page-link {
+    color: #dcdcdc;
+}
+
+.page-item.active .page-link {
+    background-color: #28a745;
+    border-color: #28a745;
+}

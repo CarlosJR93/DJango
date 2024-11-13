@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .formulario-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #007bff;
+}
+
+form {
+    width: 100%;
+}
+.form-group {
+    margin-bottom: 2rem; 
+}
+
+
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 450% 450%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+</style>
+<div class="container mt-5 d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="w-75"> <!-- Usa w-100, w-75, w-50, etc. para ajustar el ancho -->
+        <h2 class="text-center mb-4 formulario-titulo">Formulario de Ingreso</h2>
+        <form method="post" class="p-4 shadow-lg rounded" style="background-color: #f8f9fa;">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.as_p }}
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Registrar</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+
+
+

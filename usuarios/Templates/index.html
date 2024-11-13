@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Bienvenido a Mi Proyecto Django</h1>
+        <p class="lead">Este es mi proyecto con Django para Programacion web.</p>
+        <hr class="my-4">
+        <p>Estas son las funcionalidades disponibles:</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'ingresar' %}" role="button">Ingresar Usuario</a>
+        <a class="btn btn-secondary btn-lg" href="{% url 'lista' %}" role="button">Ver Lista de Usuarios</a>
+    </div>
+</div>
+{% endblock %}
